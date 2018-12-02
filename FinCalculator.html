@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--The next line will automatically allow blocked content in IE-->
+<!-- saved from url=(0014)about:internet -->
+<html lang="en">
+<head>
+<script script type="text/javascript" src="FinCalculator.js"></script>
+</head>
+<body>
+
+<!--financial-calculator-test-1.1.xls Input fields-->
+<form name="indata">
+<fieldset>
+<legend>Input</legend>
+<TABLE BORDER="1">
+  <TR>
+    <TD>Gross Income</TD>
+    <TD>
+      <input type="number" id="Gross">
+    </TD>
+  </TR>
+  <TR>
+    <TD>Rental Income</TD>
+    <TD>
+	  <input type="number" id="Rental">
+    </TD>
+  </TR>
+  <TR>
+    <TD>Number of Children</TD>
+    <TD>
+	  <input type="number" id="Children" name="Children" min="0" max="10">
+    </TD>
+  </TR>
+</TABLE>
+<P><input type="button" onclick="processFormData();" value="Calculate"></P>
+</fieldset>
+</form>
+
+<!--financial-calculator-test-1.1.xls Output will be initially disabled-->
+<form name="outdata" style="display:none">
+<fieldset>
+<legend>Output</legend>
+<TABLE BORDER="1">
+  <TR>
+    <TD>Income Tax</TD>
+    <TD>
+      <input type="text" id="inctax" readonly>
+    </TD>
+  </TR>
+  <TR>
+    <TD>Rental Income</TD>
+    <TD>
+	  <input type="text" id="rentinc" readonly>
+    </TD>
+  </TR>
+  <TR>
+    <TD><b>Total Income</b></TD>
+    <TD>
+	  <input type="text" style="font-weight:bold;" id="totinc" readonly>
+    </TD>
+  </TR>
+  <TR>
+    <TD>Expense</TD>
+    <TD>
+	  <input type="text" id="expenseamt" readonly>
+    </TD>
+  </TR>
+  <TR>
+    <TD><b>Surplus</b></TD>
+    <TD>
+	  <input type="text" style="font-weight:bold;" id="surplusamt" readonly>
+    </TD>
+  </TR>
+</TABLE>
+</fieldset>
+</form>
+</body>
+</html>
